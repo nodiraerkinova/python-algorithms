@@ -1,4 +1,8 @@
-a, b, c, d, e = map(int, input().split())
-a = sum(a, b, c, d, e)
-n = min(a, b, c, d, e)
-x = max(a, b, c, d, e)
+numbers = list(map(int, input().split()))
+
+u = sum(numbers)
+
+min_n = u - max(numbers)
+max_n = u - min(numbers)
+
+print(min_n, max_n)
