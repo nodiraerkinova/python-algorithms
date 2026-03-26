@@ -1,0 +1,6 @@
+N = int(input())
+nums = list(map(int, input().split()))
+# print(set(nums)) 
+no_db_nums = set(nums)
+no_db_num = sum(no_db_nums) * 2 - sum(nums)
+print(no_db_num) 
